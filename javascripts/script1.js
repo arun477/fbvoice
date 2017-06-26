@@ -20,7 +20,8 @@ $(document).ready(function(){
   }
 
   $("#loginbutton").click(function(){
-  	alert("ok");
+  	alert("worked");
+
      $("#status").html(response.status);
   	FB.login();
   });
