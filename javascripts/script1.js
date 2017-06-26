@@ -22,9 +22,11 @@ $(document).ready(function(){
 
   $("#loginbutton").click(function(){
   	alert("worked");
+    FB.login();
+  });
 
-     $("#status").html(response.status);
-  	FB.login();
+  $("#logoutbutton").click(function(){
+    FB.logout();
   });
 
 
