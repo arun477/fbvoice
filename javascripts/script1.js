@@ -11,11 +11,12 @@ $(document).ready(function(){
     });     
     $('#loginbutton,#feedbutton').removeAttr('disabled');
     FB.getLoginStatus(updateStatusCallback);
-    FB.login();
+    
   });
   
   updateStatusCallback = function(response){
   	alert(response.status);
+    $("#status").html(response);
   }
 
   $("#loginbutton").click(function(){
