@@ -16,7 +16,7 @@ $(document).ready(function(){
   
   updateStatusCallback = function(response){
   	alert(response.status);
-    $("#status").html(response);
+    $("#status").html(response.status);
   }
 
   $("#loginbutton").click(function(){
