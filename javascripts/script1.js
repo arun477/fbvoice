@@ -11,7 +11,7 @@ $(document).ready(function(){
       version: 'v2.7' // or v2.1, v2.2, v2.3, ...
     });     
     $('#loginbutton,#feedbutton').removeAttr('disabled');
-    FB.getLoginStatus(updateStatusCallback);
+    
     
   });
   
@@ -23,13 +23,14 @@ $(document).ready(function(){
 });
   }
   else {
-    
+    FB.login();
   }
 }
 
   $("#loginbutton").click(function(){
-  	
-    FB.login();
+  	FB.getLoginStatus(updateStatusCallback);
+
+    
 
   });
 
