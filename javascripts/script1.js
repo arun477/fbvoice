@@ -1,7 +1,7 @@
 // all scripts uses jquery library
 
 $(document).ready(function(){
-  alert("cool");
+ 
  
    // this initialize the facebook sdk and cache it locally
    $.ajaxSetup({ cache: true});
