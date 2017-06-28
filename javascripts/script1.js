@@ -19,7 +19,7 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'last_name'}, function(response) {
+     FB.api('/me', {fields: 'first_name'}, function(response) {
   console.log(response);
    $.responses = response;
    $("#loginbutton").hide();
