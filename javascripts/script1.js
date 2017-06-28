@@ -22,6 +22,9 @@ $(document).ready(function(){
      FB.api('/me', {fields: 'last_name'}, function(response) {
   console.log(response);
    $.responses = response;
+   $("#loginbutton").hide();
+   $("#user").show();
+   $("#username").text($.responses.last_name);
   
 });
   }
