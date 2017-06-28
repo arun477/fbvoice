@@ -79,14 +79,13 @@ display:-webkit-flex;
 }
 
 #user {
-	display:none;
-	text-align:center;
-	font-family: 'Marck Script', cursive;
+	text-align:right;
+	 font-family: 'Frijole', cursive;
 	margin:1%;
-	margin-left:70%;
-	padding:2%;
+	margin-top:4%;
+	padding:;
 	background-color:;
 	font-size:1.33em;
-	width:10%;
+	width:96%;
 	cursor:pointer;
 }
