@@ -22,10 +22,11 @@ $(document).ready(function(){
      FB.api('/me', {fields: 'first_name,name,picture'}, function(response) {
   console.log(response);
    $.responses = response;
+   $.url = response.picture.data.url;
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
-   $("#person").attr("src",$.responses.picture.data.url);
+   $("#person").attr("src",$.url);
   
 });
   }
