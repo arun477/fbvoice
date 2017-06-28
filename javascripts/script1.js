@@ -15,14 +15,21 @@ $(document).ready(function(){
     
   });
   
-  updateStatusCallback = function(response){
-  	alert(response.status);
-
+  updateStatusCallback = function(response) {
+  if (response.status === 'connected') {
+    console.log('Logged in.');
   }
+  else {
+    
+  }
+}
 
   $("#loginbutton").click(function(){
-  	alert("worked");
+  	
     FB.login();
+    FB.api('/me', {fields: 'last_name'}, function(response) {
+  console.log(response);
+});
   });
 
   $("#logoutbutton").click(function(){
