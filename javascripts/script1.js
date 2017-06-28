@@ -19,12 +19,13 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'first_name'}, function(response) {
+     FB.api('/me', {fields: 'first_name,name,picture'}, function(response) {
   console.log(response);
    $.responses = response;
    $("#loginbutton").hide();
    $("#user").show();
-   $("#username").text($.responses.last_name);
+   $("#username").text($.responses.first_name);
+   $("#person").attr("src",responses.picture);
   
 });
   }
