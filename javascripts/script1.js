@@ -1,8 +1,8 @@
 // all scripts uses jquery library
 
 $(document).ready(function(){
- 
- 
+  
+    var responses;
    // this initialize the facebook sdk and cache it locally
    $.ajaxSetup({ cache: true});
    $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
@@ -15,13 +15,13 @@ $(document).ready(function(){
     
   });
 
-  var responses;
+  
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
      FB.api('/me', {fields: 'last_name'}, function(response) {
   console.log(response);
-   responses = response;
+   $.responses = response;
   
 });
   }
