@@ -23,10 +23,12 @@ $(document).ready(function(){
   console.log(response);
    $.responses = response;
    $.url = response.picture.data.url;
+   $.name = response.name;
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
    $("#profileimg").attr("src",$.url);
+   $("#name").text($.name);
   
 });
   }
