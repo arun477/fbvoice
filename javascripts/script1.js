@@ -21,9 +21,9 @@ $(document).ready(function(){
 
      FB.api('/me', {fields: 'last_name'}, function(response) {
   console.log(response);
-  $("loginbutton").css("display","none");
-  $("user").css("display", "block");
-  $("username").html(response.last_name);
+  $("#loginbutton").hide();
+  $("#user").css("display", "block");
+  $("#username").html(response.last_name);
 });
   }
   else {
