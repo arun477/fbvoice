@@ -23,7 +23,7 @@ $(document).ready(function(){
 });
   }
   else {
-    console.log("there is some problem in your login")
+    FB.login();
   }
 }
 
