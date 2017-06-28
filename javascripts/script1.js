@@ -18,6 +18,9 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
+     FB.api('/me', {fields: 'last_name'}, function(response) {
+  console.log(response);
+});
   }
   else {
     
@@ -27,9 +30,7 @@ $(document).ready(function(){
   $("#loginbutton").click(function(){
   	
     FB.login();
-    FB.api('/me', {fields: 'last_name'}, function(response) {
-  console.log(response);
-});
+
   });
 
   $("#logoutbutton").click(function(){
