@@ -26,7 +26,7 @@ $(document).ready(function(){
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
-   $("#person").attr("src",$.url);
+   $("#profileimg").attr("src",$.url);
   
 });
   }
