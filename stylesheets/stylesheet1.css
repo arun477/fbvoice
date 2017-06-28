@@ -88,4 +88,5 @@ display:-webkit-flex;
 	font-size:1.33em;
 	width:96%;
 	cursor:pointer;
+	display:none;
 }
