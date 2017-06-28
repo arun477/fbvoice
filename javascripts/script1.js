@@ -20,6 +20,7 @@ $(document).ready(function(){
     console.log('Logged in.');
      FB.api('/me', {fields: 'last_name'}, function(response) {
   console.log(response);
+  var response = response;
 });
   }
   else {
