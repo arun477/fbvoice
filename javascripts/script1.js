@@ -14,13 +14,15 @@ $(document).ready(function(){
     
     
   });
-  
+
+  var responses;
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
      FB.api('/me', {fields: 'last_name'}, function(response) {
   console.log(response);
-  var response = response;
+   responses = response;
+  
 });
   }
   else {
