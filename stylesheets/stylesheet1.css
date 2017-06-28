@@ -3,3 +3,90 @@ body, html {
 	padding:0;
 	background-color:grey;
 }
+
+.container {
+display:-webkit-flex;
+	display:flex;
+	-webkit-justify-content:;
+	flex-wrap:wrap;
+	justify-content:;
+	width:100%;
+	margin:0;
+	background-color:#FDFDFB;
+	padding:0;
+}
+
+
+
+#item1 {
+	width:50%;
+	background-color:;
+	
+}
+
+#logo {
+	text-align:left;
+    font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-left:;
+	padding:;
+	background-color:;
+	font-size:1.6em;
+	width:96%;
+    color:grey;
+    text-shadow:3px 3px 3px black;
+}
+#fblogo, #speaker {
+	text-shadow:1px 1px 1px black;
+}
+
+#item2 {
+	width:50%;
+	background-color:;
+	
+}
+
+#loginbutton {
+
+	text-align:right;
+	 font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:4%;
+	padding:;
+	background-color:;
+	font-size:1.33em;
+	width:96%;
+	cursor:pointer;
+
+
+}
+#loginbutton:hover {
+    text-align:right;
+	 font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:4%;
+	padding:;
+	background-color:;
+	font-size:1.33em;
+	width:96%;
+	color:grey;
+	cursor:pointer;
+	text-shadow:1px 1px 2px black;
+	border-bottom:;
+	border-width:;
+	border-size:;
+
+}
+
+#user {
+	display:none;
+	text-align:center;
+	font-family: 'Marck Script', cursive;
+	margin:1%;
+	margin-left:70%;
+	padding:2%;
+	background-color:;
+	font-size:1.33em;
+	width:10%;
+	cursor:pointer;
+}
