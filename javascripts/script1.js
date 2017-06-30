@@ -24,7 +24,7 @@ $(document).ready(function(){
    $.responses = response;
    $.url = response.picture.data.url;
    $.nn = response.name;
-   
+   $.cov  = response.cover.source;
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
@@ -32,6 +32,7 @@ $(document).ready(function(){
    $("#name").text($.nn);
        $("#prof1").attr("src",$.url);
        $("#profession").text($.ff);
+       $("#item3-a").css("background-image",'url($.cov)');
   
 });
   }
