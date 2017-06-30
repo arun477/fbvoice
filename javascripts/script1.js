@@ -35,7 +35,7 @@ $(document).ready(function(){
    $.getScript('https://connect.facebook.net/en_US/sdk.js', function(){
     FB.init({
       appId: '168329377033776',
-      version: 'v2.7' // or v2.1, v2.2, v2.3, ...
+      version: 'v2.9' // or v2.1, v2.2, v2.3, ...
     });     
     $('#loginbutton,#feedbutton').removeAttr('disabled');
     
@@ -46,7 +46,7 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'first_name,name,hometown,picture.type(large),cover'}, function(response) {
+     FB.api('/me', {fields: 'first_name,name,picture.type(large),cover,hometown'}, function(response) {
   console.log(response);
    $.responses = response;
    $.url = response.picture.data.url;
