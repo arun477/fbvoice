@@ -46,12 +46,13 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'first_name,name,education,picture.type(large),cover'}, function(response) {
+     FB.api('/me', {fields: 'first_name,name,hometown,picture.type(large),cover'}, function(response) {
   console.log(response);
    $.responses = response;
    $.url = response.picture.data.url;
    $.nn = response.name;
    $.cov  = response.cover.source;
+   $.place = response.hometown.name;
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
