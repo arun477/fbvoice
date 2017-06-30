@@ -32,7 +32,7 @@ $(document).ready(function(){
    $("#name").text($.nn);
        $("#prof1").attr("src",$.url);
        $("#profession").text($.ff);
-       $("#item3-a").css("background-image",'url($.cov)');
+       $("#item3-a").css("background-image",'url('+$.cov+')');
   
 });
   }
