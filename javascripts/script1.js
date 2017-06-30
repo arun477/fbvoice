@@ -24,7 +24,7 @@ $(document).ready(function(){
    $.responses = response;
    $.url = response.picture.data.url;
    $.nn = response.name;
-    $.ff = response.education[0].school.name;
+   
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
