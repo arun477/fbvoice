@@ -19,17 +19,19 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'first_name,name,picture.type(large),education'}, function(response) {
+     FB.api('/me', {fields: 'first_name,name,education,picture.type(large)'}, function(response) {
   console.log(response);
    $.responses = response;
    $.url = response.picture.data.url;
    $.nn = response.name;
+    $.ff = response.education[0].school.name;
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
    $("#profileimg").attr("src",$.url);
    $("#name").text($.nn);
-       $("#prof").css("src",$.url);
+       $("#prof").attr("src",$.url);
+       $("#profession").text($.ff);
   
 });
   }
