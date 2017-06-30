@@ -131,6 +131,13 @@ display:-webkit-flex;
 	margin:0;
 }
 
+#prof1 { 
+	width:10%;
+	border-radius:100%;
+	margin:0;
+}
+	
+
 #item3 {
 	margin:0;
 	margin-top:5%;
@@ -359,6 +366,10 @@ display:-webkit-flex;
 #prof {
 	width:15%;
 }
+	
+#prof1 {
+	width:15%
+	}
 
 #logo {
 	display:inline-block;
