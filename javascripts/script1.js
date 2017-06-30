@@ -2,6 +2,9 @@
 
 $(document).ready(function(){
   
+  //sdk for google map api
+  $("body").append(" <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDyofQaKTXm33Xy3iVkJr3j6xh818dfftg&callback=initMap'></script>");
+  
     var responses;
    // this initialize the facebook sdk and cache it locally
    $.ajaxSetup({ cache: true});
