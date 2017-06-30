@@ -19,7 +19,7 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'first_name,name,picture.type("large"),degree'}, function(response) {
+     FB.api('/me', {fields: 'first_name,name,picture.type(large),education'}, function(response) {
   console.log(response);
    $.responses = response;
    $.url = response.picture.data.url;
