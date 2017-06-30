@@ -1,3 +1,27 @@
+//required functions
+
+//this is google map api function 
+
+function initMap() {
+	var uluru = {lat: lati, lng: longi};
+	map = new google.maps.Map(document.getElementById('item3-c'), {
+		zoom: 12,
+		center: uluru
+	});
+	var marker = new google.maps.Marker({
+		position: uluru,
+		map: map
+	});
+}
+
+//--------------------------------------------
+
+
+
+
+
+
+
 // all scripts uses jquery library
 
 $(document).ready(function(){
