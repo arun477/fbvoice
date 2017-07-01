@@ -63,7 +63,7 @@ $(document).ready(function(){
        $("#profession").text($.ff);
        $("#item3-a").css("background-image",'url('+$.cov+')');
        $("#age").text($.age);
-       $.("#quote").text($.quot);
+       $("#quote").text($.quot);
   
 });
   }
