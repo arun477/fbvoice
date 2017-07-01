@@ -1,21 +1,46 @@
 //required functions
 
-//this is google map api function 
 
-function initMap() {
-	var uluru = {lat: lati, lng: longi};
-	map = new google.maps.Map(document.getElementById('item3-c'), {
-		zoom: 12,
-		center: uluru
-	});
-	var marker = new google.maps.Marker({
-		position: uluru,
-		map: map
-	});
-}
 
 //--------------------------------------------
  //sdk for google map api
+
+   var map, infoWindow;
+     function initMap() {
+        map = new google.maps.Map(document.getElementById('item3-c'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      } 
  // $("body").append(" <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDyofQaKTXm33Xy3iVkJr3j6xh818dfftg&callback=initMap'></script>");
 
 //-------------------------------------------
@@ -26,6 +51,17 @@ function initMap() {
 // all scripts uses jquery library
 
 $(document).ready(function(){
+
+
+  //map api section
+
+
+    
+   
+   $("body").append(" <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDyofQaKTXm33Xy3iVkJr3j6xh818dfftg&callback=initMap'></script>");
+    
+
+  //--------------------------------------
   
  
   

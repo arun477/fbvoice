@@ -190,6 +190,7 @@ display:-webkit-flex;
 	margin:2%;
 	color:black;
 	text-shadow:2px 2px 2px white;
+	line-height:2em;
 }
 
 #item3-c{
@@ -198,6 +199,11 @@ display:-webkit-flex;
 	margin-top:2%;
 	margin-left:2%;
 	padding:;
+}
+
+#map {
+	width:100%;
+	height:250px;
 }
 
 /* -------------------------------------------------------------- */
