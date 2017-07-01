@@ -92,6 +92,7 @@ $(document).ready(function(){
    $.gen = response.gender;
    $("#loginbutton").hide();
    $("#user").show();
+   $("#logoutbutton").show();
    $("#username").text($.responses.first_name);
    $("#profileimg").attr("src",$.url);
    $("#name").text($.nn);
@@ -122,6 +123,38 @@ $(document).ready(function(){
   $("#logoutbutton").click(function(){
     FB.logout();
   });
+
+
+//--------------------------------------------------
+// web speech api
+
+$("#micke1").click(function(){
+
+  if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+      var recognition = new webkitSpeechRecognition();
+
+      recognition.continuous = false;
+      recognition.interimResults = false;
+
+      recognition.lang = "en-US";
+      recognition.start();
+
+      recognition.onresult = function(e) {
+       console.log(e.results[0][0].transcript);
+        recognition.stop();
+        
+      };
+
+      recognition.onerror = function(e) {
+        recognition.stop();
+      }
+
+    }
+});
+
+
+
 
 
 });
