@@ -15,9 +15,10 @@ function initMap() {
 }
 
 //--------------------------------------------
+ //sdk for google map api
+ // $("body").append(" <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDyofQaKTXm33Xy3iVkJr3j6xh818dfftg&callback=initMap'></script>");
 
-
-
+//-------------------------------------------
 
 
 
@@ -26,8 +27,7 @@ function initMap() {
 
 $(document).ready(function(){
   
-  //sdk for google map api
-  $("body").append(" <script async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDyofQaKTXm33Xy3iVkJr3j6xh818dfftg&callback=initMap'></script>");
+ 
   
     var responses;
    // this initialize the facebook sdk and cache it locally
@@ -46,13 +46,13 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'first_name,name,picture.type(large),cover,hometown'}, function(response) {
+     FB.api('/me', {fields: 'first_name,name,picture.type(large),cover,age_range'}, function(response) {
   console.log(response);
    $.responses = response;
    $.url = response.picture.data.url;
    $.nn = response.name;
    $.cov  = response.cover.source;
-   $.place = response.hometown.name;
+   $.age = response.age_range.min;
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
