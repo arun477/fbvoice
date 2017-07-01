@@ -16,7 +16,7 @@ display:-webkit-flex;
 	padding:0;
 }
 
-
+/* navbar stylees for size more than 980px */
 
 #item1 {
 	width:50%;
@@ -136,7 +136,9 @@ display:-webkit-flex;
 	border-radius:100%;
 	margin:0;
 }
-	
+/* ---------------------------------------------------------- */
+
+/* styless for profile section for more than 890px  */	
 
 #item3 {
 	margin:0;
@@ -180,11 +182,12 @@ display:-webkit-flex;
 #item3-b:hover,#item3-c:hover {
 	box-shadow:3px 3px 3px grey;
 }
-#name1,#profession1 {
+#name1,#age1, #quote1 {
 	text-align:center;
 	font-family: 'Niconne', cursive;
 	font-size:2em;
 	font-weight:3em;
+	margin:2%;
 	color:grey;
 	text-shadow:2px 2px 2px white;
 }
@@ -197,12 +200,8 @@ display:-webkit-flex;
 	padding:;
 }
 
-#person, #profession{
-	width:20%;
-}
-
-
-
+/* -------------------------------------------------------------- */
+/* styless for query section for more than 890px  */	
 
 #item4 {
 	margin-top:5%;
@@ -240,16 +239,6 @@ display:-webkit-flex;
 	width:10%;
 	margin:2%;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -308,14 +297,7 @@ display:-webkit-flex;
    width:100%;
 }
 
-#name1,#profession1 {
-	text-align:center;
-	font-family: 'Niconne', cursive;
-	font-size:1.6em;
-	font-weight:3em;
-	color:grey;
-	text-shadow:2px 2px 2px white;
-}
+
 
 #loginbutton {
 
