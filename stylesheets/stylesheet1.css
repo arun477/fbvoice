@@ -166,10 +166,11 @@ display:-webkit-flex;
 #profileimg {
 	width:25%;
 	height:120px;
-	margin:15%;
+	margin:;
 	margin-left:35%;
-	margin-top:25%;
-	margin-bottom:5%;
+	margin-top:15%;
+	margin-bottom:;
+
 	border-radius:100%;
 	border:3px solid white;
 }
