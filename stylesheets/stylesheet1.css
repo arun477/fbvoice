@@ -210,6 +210,10 @@ display:-webkit-flex;
 	height:250px;
 }
 
+#gender {
+	width:20%;
+}
+
 /* -------------------------------------------------------------- */
 /* styless for query section for more than 890px  */	
 
