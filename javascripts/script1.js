@@ -46,13 +46,14 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'first_name,name,picture.type(large),cover,age_range'}, function(response) {
+     FB.api('/me', {fields: 'first_name,name,picture.type(large),cover,age_range,quotes'}, function(response) {
   console.log(response);
    $.responses = response;
    $.url = response.picture.data.url;
    $.nn = response.name;
    $.cov  = response.cover.source;
    $.age = response.age_range.min;
+   $.quot = response.quotes;
    $("#loginbutton").hide();
    $("#user").show();
    $("#username").text($.responses.first_name);
@@ -61,6 +62,8 @@ $(document).ready(function(){
        $("#prof1").attr("src",$.url);
        $("#profession").text($.ff);
        $("#item3-a").css("background-image",'url('+$.cov+')');
+       $("#age").text($.age);
+       $.("#quote").text($.quot);
   
 });
   }
