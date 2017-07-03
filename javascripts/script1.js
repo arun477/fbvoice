@@ -62,7 +62,7 @@ $(document).ready(function(){
     
 
   //--------------------------------------
-  
+  //facebook api section 
  
   
     var responses;
@@ -126,7 +126,7 @@ $(document).ready(function(){
 
 
 //--------------------------------------------------
-// web speech api
+// web speech api second
 
 $("#micke1").click(function(){
 
