@@ -20,7 +20,7 @@ display:-webkit-flex;
 
 #item1 {
 	width:50%;
-	background-color:pink;
+	background-color:#5FD4AF;
 	box-shadow:;
 
 	
@@ -74,7 +74,7 @@ display:-webkit-flex;
 
 #item2 {
 	width:50%;
-	background-color:pink;
+	background-color:#5FD4AF;
 	box-shadow:;
 	
 }
@@ -301,7 +301,29 @@ display:-webkit-flex;
 	color:#5FD4AF;
 }
 
+/* footer styles */
 
+#item5 {
+	width:100%;
+	margin:0;
+	padding:;
+    margin-top:2%;
+	background-color:black;
+}
+
+#foot {
+	text-align:center;
+	padding:2px;
+	color:white;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	color:#5FD4AF;
+	font-weight:3em;
+	text-shadow:1px 1px 2px #5FD4AF;
+}
+
+#cop {
+	font-family:serif;
+}
 
 
 
