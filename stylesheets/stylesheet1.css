@@ -193,6 +193,9 @@ display:-webkit-flex;
 	margin-left:2%;
 	background-image:url("../images/githubicon.jpg");
 	background-size: 100% 100%;
+	background-position:content;
+	background-repeat:no-repeat;
+
 
 }
 #item3-a:hover {
@@ -207,7 +210,7 @@ display:-webkit-flex;
 	margin-left:35%;
 	margin-top:3%;
 	margin-bottom:;
-
+    opacity:0.9;
 	border-radius:100%;
 	border:3px solid white;
 }
@@ -281,13 +284,7 @@ display:-webkit-flex;
 	font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
-#item4-b {
-	margin:0;
-	width:98%;
-	height:;
-	box-shadow:0 3px 3px grey;
-	margin-left:2%;
-}
+
 
 #micke1 {
 	width:10%;
@@ -299,6 +296,16 @@ display:-webkit-flex;
 #cmdlist {
 	text-decoration:none;
 	color:#5FD4AF;
+}
+
+#item4-b {
+	margin:0;
+	width:98%;
+	padding:3%;
+	height:;
+	box-shadow:0 3px 3px grey;
+	margin-left:2%;
+	font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
 /* footer styles */
@@ -402,7 +409,49 @@ display:-webkit-flex;
    width:100%;
 }
 
+#logo {
+	display:inline-block;
+	text-align:left;
+    font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:;
+	margin-left:;
+	padding:;
+	background-color:;
+	font-size:1.4em;
+	width:70%;
+    color:grey;
+    text-shadow:3px 3px 3px black;
+}
 
+#icon1{
+   font-size:2.5em;
+   color:black;
+   font-family:;
+   text-shadow:0px 0px 0px black ;
+}
+
+ #speaker {
+ 	margin:0;
+	width:8%;
+	opacity:0.2;
+	animation-name:speak;
+	animation-iteration-count:infinite;
+	animation-duration:2s;
+	animation-timing-function:ease-in-out;
+	animation-direction:alternate-reverse;
+}
+
+@keyframes speak {
+	from {opacity:0.2;
+          width:8%;
+          
+	}
+	to  {opacity:1;
+         width:13%;
+	}
+
+}
 
 #loginbutton {
 
@@ -436,14 +485,46 @@ display:-webkit-flex;
 
 }
 
+#logoutbutton {
+    display:none;
+	text-align:right;
+	font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:3%;
+	padding:;
+	background-color:;
+	font-size:0.8em;
+	width:96%;
+	cursor:pointer;
+
+
+}
+#logoutbutton:hover {
+    text-align:right;
+	font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:3%;
+	padding:;
+	background-color:;
+	font-size:0.8em;
+	width:96%;
+	color:grey;
+	cursor:pointer;
+	text-shadow:1px 1px 2px black;
+	border-bottom:;
+	border-width:;
+	border-size:;
+
+}
+
 #user {
 	text-align:right;
 	font-family: 'Frijole', cursive;
 	margin:1%;
-	margin-top:4%;
+	margin-top:2%;
 	padding:;
 	background-color:;
-	font-size:1em;
+	font-size:0.8em;
 	width:96%;
 	cursor:pointer;
 	color:grey;
@@ -451,56 +532,22 @@ display:-webkit-flex;
 }
 
 #prof {
-	width:15%;
+	width:5%;
+	border-radius:100%;
+	margin:0;
 }
-	
-#prof1 {
-	width:15%
-	}
-
-#logo {
-	display:inline-block;
-	text-align:left;
-    font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:;
-	margin-left:;
-	padding:;
-	background-color:;
-	font-size:1.4em;
-	width:80%;
-    color:grey;
-    text-shadow:3px 3px 3px black;
+#logou {
+	width:3%;
+	border-radius:100%;
+	margin:0;
 }
 
-#icon1{
-   font-size:2.2em;
-   color:black;
-   font-family:;
-   text-shadow:0px 0px 0px black ;
+#prof1 { 
+	width:5%;
+	border-radius:100%;
+	margin:0;
 }
 
- #speaker {
- 	margin:0;
-	width:10%;
-	opacity:0.2;
-	animation-name:speak;
-	animation-iteration-count:infinite;
-	animation-duration:2s;
-	animation-timing-function:ease-in-out;
-	animation-direction:alternate-reverse;
-}
-
-@keyframes speak {
-	from {opacity:0.2;
-          width:10%;
-          
-	}
-	to  {opacity:1;
-         width:15%;
-	}
-
-}
 
 
 }
