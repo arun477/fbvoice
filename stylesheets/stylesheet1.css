@@ -759,3 +759,210 @@ display:-webkit-flex;
 }
 
 }
+
+/* styless for upto 470px */
+
+@media screen and (max-width:470px) {
+
+  #logo {
+	display:inline-block;
+	text-align:left;
+    font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:;
+	margin-left:;
+	padding:;
+	background-color:;
+	font-size:1em;
+	width:70%;
+    color:grey;
+    text-shadow:3px 3px 3px black;
+}
+
+#icon1{
+   font-size:2.5em;
+   color:black;
+   font-family:;
+   text-shadow:0px 0px 0px black ;
+}
+
+ #speaker {
+ 	margin:0;
+	width:17%;
+	opacity:0.2;
+	animation-name:speak;
+	animation-iteration-count:infinite;
+	animation-duration:2s;
+	animation-timing-function:ease-in-out;
+	animation-direction:alternate-reverse;
+}
+
+@keyframes speak {
+	from {opacity:0.2;
+          width:17%;
+          
+	}
+	to  {opacity:1;
+         width:22%;
+	}
+
+}
+
+#loginbutton {
+
+	text-align:right;
+	font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:11%;
+	padding:;
+	background-color:;
+	font-size:0.9em;
+	width:96%;
+	cursor:pointer;
+
+
+}
+#loginbutton:hover {
+    text-align:right;
+	font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:11%;
+	padding:;
+	background-color:;
+	font-size:0.9em;
+	width:96%;
+	color:grey;
+	cursor:pointer;
+	text-shadow:1px 1px 2px black;
+	border-bottom:;
+	border-width:;
+	border-size:;
+
+}
+
+#logoutbutton {
+    display:none;
+	text-align:right;
+	font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:3%;
+	padding:;
+	background-color:;
+	font-size:0.8em;
+	width:96%;
+	cursor:pointer;
+
+
+}
+#logoutbutton:hover {
+    text-align:right;
+	font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:3%;
+	padding:;
+	background-color:;
+	font-size:0.8em;
+	width:96%;
+	color:grey;
+	cursor:pointer;
+	text-shadow:1px 1px 2px black;
+	border-bottom:;
+	border-width:;
+	border-size:;
+
+}
+
+#user {
+	text-align:right;
+	font-family: 'Frijole', cursive;
+	margin:1%;
+	margin-top:2%;
+	padding:;
+	background-color:;
+	font-size:0.8em;
+	width:96%;
+	cursor:pointer;
+	color:grey;
+	display:none;
+}
+
+#prof {
+	width:14%;
+	border-radius:100%;
+	margin:0;
+}
+#logou {
+	width:11%;
+	border-radius:100%;
+	margin:0;
+}
+
+#prof1 { 
+	width:14%;
+	border-radius:100%;
+	margin:0;
+}
+
+#item3-b{
+	width:98%;
+	box-shadow:0 3px 3px grey;
+	margin-top:2%;
+	margin-left:2%;
+	height:180px;
+	padding:;
+	
+}
+#item3-b:hover,#item3-c:hover {
+
+	width:98%;
+
+	margin-top:2%;
+	margin-left:2%;
+	padding:;
+	box-shadow:0px 0px 0px grey;
+}
+
+#item3-c{
+	width:98%;
+	box-shadow:0 3px 3px grey;
+	margin-top:2%;
+	margin-left:2%;
+	padding:;
+}
+
+#name1,#age1, #quote1 {
+	text-align:center;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size:1.5em;
+	font-weight:1em;
+	margin:2%;
+	color:#5FD4AF;
+	text-shadow:2px 2px 2px black;
+	line-height:1.2em;
+	letter-spacing:0.10em;
+}
+
+#map {
+	display:none;
+	width:100%;
+	height:250px;
+}
+
+#gender {
+	width:15%;
+}
+
+#profileimg {
+	width:20%;
+	height:100px;
+	margin:;
+	margin-left:35%;
+	margin-top:3%;
+	margin-bottom:;
+    opacity:0.9;
+	border-radius:100%;
+	border:3px solid white;
+}
+
+
+}
