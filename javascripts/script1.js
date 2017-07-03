@@ -100,15 +100,11 @@ $(document).ready(function(){
        $("#profession").text($.ff);
        $("#item3-a").css("background-image",'url('+$.cov+')');
        $("#age").text($.age);
-       $("#logoutbutton").click(function(){
-    FB.logout();
-  });
        if($.gen ==="male"){
        $("#gender").attr("src","images/maleicon.png");
      } else{
        $("#gender").attr("src","images/femaleicon.png");
      }
-
   
 });
   }
@@ -125,6 +121,10 @@ $(document).ready(function(){
   });
 
   
+
+  $("#logoutbutton").click(function(){
+    FB.logout();
+  });
 
 
 //--------------------------------------------------

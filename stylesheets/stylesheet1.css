@@ -316,17 +316,40 @@ display:-webkit-flex;
 	padding:2px;
 	color:white;
 	font-family: 'Tenali Ramakrishna', sans-serif;
-	color:#5FD4AF;
+	color:white;
 	font-weight:3em;
-	text-shadow:1px 1px 2px #5FD4AF;
+	text-shadow: ;
+	cursor:pointer;
+	
 }
 
 #cop {
 	font-family:serif;
 }
+#lim {
+	text-decoration:none;
+}
 
-
-
+#git{
+	margin:3%;
+    color:;
+}
+#insta {
+	margin:3%;
+	color:;
+}
+#contain{
+	text-align:center;
+	color:;
+} 
+#fb, #git, #insta {
+	margin-top:0;
+	margin-bottom:0;
+	color:#5FD4AF;
+}
+#fb:hover, #git:hover, #insta:hover {
+	color:white;
+}
 
 
 
