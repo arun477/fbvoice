@@ -156,7 +156,7 @@ $("#micke1").click(function(){
       
         
         $("#item4-b").html("<p>" +"message : " +" " +$.ree +" " + "click the post button to post message"+"</p>" +"<br>"+"<h1 id='postbutton>post</h1>");
- 
+         FB.getLoginStatus(updateStatusCallback2);
        }
         recognition.stop();
         
@@ -196,7 +196,7 @@ updateStatusCallback2 = function(response) {
 
 
  $("#gender").click(function(){
-    FB.getLoginStatus(updateStatusCallback2);
+    
 
     
 
