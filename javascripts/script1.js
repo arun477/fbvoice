@@ -114,7 +114,7 @@ $(document).ready(function(){
 }
 
   $("#loginbutton").click(function(){
-  	FB.getLoginStatus(updateStatusCallback,{scope: 'publish_actions'});
+  	FB.getLoginStatus(updateStatusCallback);
 
     
 
@@ -150,16 +150,14 @@ $("#micke1").click(function(){
        if($.resultparts[0]==="post"){
         $.resultparts.shift();
         $.ree = $.resultparts.join(" ");
-      
-        $.roo = FB.login;
-        
-        $("#textare").html("message : " +" " +$.ree +" " + "successfully posted");
-        $("#textare").change($.roo(function(){
+        FB.login(function(){
   FB.api('/me/feed', 'post', {message: $.ree});
-}, {scope: 'publish_actions'}););
-
+}, {scope: 'publish_actions'});
+      
+        
+        $("#item4-b").html("<p>" +"message : " +" " +$.ree +" " + "click the post button to post message"+"</p>" +"<br>"+"<h1 id='postbutton>post</h1>");
+ 
        }
-       
         recognition.stop();
         
       };
@@ -179,6 +177,30 @@ $("#cmdlist").click(function(){
 });
 
 
+updateStatusCallback2 = function(response) {
+  if (response.status === 'connected') {
+    console.log('Logged in.');
+     
+     FB.api('/me/feed', 'post', {message: $.ree});   
+  
+
+  }
+  else {
+    FB.login();
+  }
+}
+
+
+
+
+
+
+ $("#gender").click(function(){
+    FB.getLoginStatus(updateStatusCallback2);
+
+    
+
+  });
 
 
 });
