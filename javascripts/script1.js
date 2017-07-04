@@ -81,7 +81,7 @@ $(document).ready(function(){
   
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
-    FB.login(function(response) {
+     FB.login(function(response) {
       $.userDetails = response;
         if (response.authResponse) {
             console.log('Access Token: ' + response.authResponse.accessToken);
@@ -89,7 +89,6 @@ $(document).ready(function(){
             console.log('User cancelled login or did not fully authorize.');
         }
     });
-  }
     console.log('Logged in.');
      FB.api('/me', {fields: 'first_name,name,picture.type(large),cover,age_range,gender,birthday'}, function(response) {
   console.log(response);
