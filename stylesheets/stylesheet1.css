@@ -311,6 +311,7 @@ display:-webkit-flex;
 #cmdlist {
 	text-decoration:none;
 	color:#5FD4AF;
+	cursor:pointer;
 }
 
 #item4-b {
