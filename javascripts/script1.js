@@ -143,7 +143,20 @@ $("#micke1").click(function(){
       recognition.start();
 
       recognition.onresult = function(e) {
-       console.log(e.results[0][0].transcript);
+        $.result = e.results[0][0].transcript
+       console.log($.result);
+       $.resultparts = $.result.split(" ");
+       console.log($.resultparts);
+       if($.resultparts[0]==="post"){
+        $.resultparts.shift();
+        $.ree = $.resultparts.join(" ");
+        FB.login(function(){
+  // Note: The call will only work if you accept the permission request
+  FB.api('/me/feed', 'post', {message: $.ree});
+}, {scope: 'publish_actions'});
+        $("#item4-b").html("message : " +" " +$.ree +" " + "successfully posted");
+
+       }
         recognition.stop();
         
       };

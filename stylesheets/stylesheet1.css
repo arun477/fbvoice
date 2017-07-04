@@ -386,7 +386,7 @@ display:-webkit-flex;
 
   #item3-a {
 	width:96%;
-	height:;
+	height:auto;
 	box-shadow:0 3px 3px grey;
 	margin-left:2%;
 	margin-right:2%;
