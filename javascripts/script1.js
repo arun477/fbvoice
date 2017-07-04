@@ -114,7 +114,15 @@ $(document).ready(function(){
 });
   }
   else {
-    FB.login(function(){}, {scope: 'publish_actions'});
+    //FB.login(function(){}, {scope: 'publish_actions'});
+     FB.login(function(response) {
+      $.userDetails = response;
+        if (response.authResponse) {
+            console.log('Access Token: ' + response.authResponse.accessToken);
+        } else {
+            console.log('User cancelled login or did not fully authorize.');
+        }
+    });
   }
 }
 
