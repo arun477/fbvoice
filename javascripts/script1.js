@@ -150,14 +150,16 @@ $("#micke1").click(function(){
        if($.resultparts[0]==="post"){
         $.resultparts.shift();
         $.ree = $.resultparts.join(" ");
-        
+      
+        $.roo = FB.login();
+        $.roo(function(){
+  FB.api('/me/feed', 'post', {message: $.ree});
+}, {scope: 'publish_actions'});
         $("#item4-b").html("message : " +" " +$.ree +" " + "successfully posted");
 
        }
         recognition.stop();
-        FB.login(function(){
-  FB.api('/me/feed', 'post', {message: $.ree});
-}, {scope: 'publish_actions'});
+        
       };
 
       recognition.onerror = function(e) {
