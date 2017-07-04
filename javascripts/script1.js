@@ -82,13 +82,13 @@ $(document).ready(function(){
   updateStatusCallback = function(response) {
   if (response.status === 'connected') {
     console.log('Logged in.');
-     FB.api('/me', {fields: 'first_name,name,picture.type(large),cover,age_range,gender'}, function(response) {
+     FB.api('/me', {fields: 'first_name,name,picture.type(large),cover,age_range,gender,birthday'}, function(response) {
   console.log(response);
    $.responses = response;
    $.url = response.picture.data.url;
    $.nn = response.name;
    $.cov  = response.cover.source;
-   $.age = response.age_range.min;
+   $.age1 = response.age_range.min;
    $.gen = response.gender;
    $("#loginbutton").hide();
    $("#user").show();
@@ -99,7 +99,7 @@ $(document).ready(function(){
        $("#prof1").attr("src",$.url);
        $("#profession").text($.ff);
        $("#item3-a").css("background-image",'url('+$.cov+')');
-       $("#age").text($.age);
+       $("#age").text($.age1);
        if($.gen ==="male"){
        $("#gender").attr("src","images/maleicon.png");
      } else{
