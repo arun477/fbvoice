@@ -155,6 +155,12 @@ $("#micke1").click(function(){
     }
 });
 
+// for other events
+ $("#item4-c").hide();
+
+$("#cmdlist").click(function(){
+  $("#item4-c").slideToggle(1500);
+});
 
 
 

@@ -274,6 +274,21 @@ display:-webkit-flex;
 	margin-left:2%;
 }
 
+#item4-c {
+	  padding:1%;
+	width:98%;
+	height:150px;
+	box-shadow:0 3px 3px grey;
+	margin-left:2%;
+}
+
+.commands {
+	text-align:center;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	width:98%;
+	font-size:1.3em;
+}
+
 #micke {
 	display:inline;
 	width:98%;
