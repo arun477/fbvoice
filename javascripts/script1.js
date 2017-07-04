@@ -178,7 +178,7 @@ $("#micke1").click(function(){
         
         $("#item4-b").html("<p>" +"message : " +" " +$.ree +" " + "click the post button to post message"+"</p>" +"<br>"+"<h1 id='postbutton>post</h1>");
          FB.getLoginStatus(updateStatusCallback2);
-       } else if($.resultparts[0]==="feed" || $.resultparts[0]==="feet" || $.resultparts[0]==="field" || $.resultparts[0]==="set" || $.resultparts[0]==="speed" || $.resultparts[0]==="Shahid" || $.resultparts[0]==="feel" || $.resultparts[0]==="seed" || $.resultparts[0]==="read" ){
+       } else if($.resultparts[0]==="feed" || $.resultparts[0]==="feet" || $.resultparts[0]==="field" || $.resultparts[0]==="set" || $.resultparts[0]==="speed" || $.resultparts[0]==="Shahid" || $.resultparts[0]==="feel" || $.resultparts[0]==="seed" || $.resultparts[0]==="read" || $.resultparts[0]==="food"){
               FB.api(
   '/me',
   'GET',
