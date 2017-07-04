@@ -109,12 +109,12 @@ $(document).ready(function(){
 });
   }
   else {
-    FB.login();
+    FB.login(function(){}, {scope: 'publish_actions'});
   }
 }
 
   $("#loginbutton").click(function(){
-  	FB.getLoginStatus(updateStatusCallback);
+  	FB.getLoginStatus(updateStatusCallback,{scope: 'publish_actions'});
 
     
 
