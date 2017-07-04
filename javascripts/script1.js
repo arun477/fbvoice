@@ -178,6 +178,17 @@ $("#micke1").click(function(){
         
         $("#item4-b").html("<p>" +"message : " +" " +$.ree +" " + "click the post button to post message"+"</p>" +"<br>"+"<h1 id='postbutton>post</h1>");
          FB.getLoginStatus(updateStatusCallback2);
+       } else if($.resultparts[0]==="feed"){
+              FB.api(
+  '/me',
+  'GET',
+  {"fields":"feed.limit(5)"},
+  function(response) {
+     console.log(response);
+     $.fee = response.feed.data;
+      // Insert your code here
+  }
+);
        }
         recognition.stop();
         
