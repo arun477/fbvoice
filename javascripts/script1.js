@@ -152,12 +152,14 @@ $("#micke1").click(function(){
         $.ree = $.resultparts.join(" ");
       
         $.roo = FB.login;
-        $.roo(function(){
+        
+        $("#textare").html("message : " +" " +$.ree +" " + "successfully posted");
+        $("#textare").change($.roo(function(){
   FB.api('/me/feed', 'post', {message: $.ree});
-}, {scope: 'publish_actions'});
-        $("#item4-b").html("message : " +" " +$.ree +" " + "successfully posted");
+}, {scope: 'publish_actions'}););
 
        }
+       
         recognition.stop();
         
       };
