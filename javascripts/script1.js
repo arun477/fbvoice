@@ -151,7 +151,7 @@ $("#micke1").click(function(){
         $.resultparts.shift();
         $.ree = $.resultparts.join(" ");
       
-        $.roo = FB.login();
+        $.roo = FB.login;
         $.roo(function(){
   FB.api('/me/feed', 'post', {message: $.ree});
 }, {scope: 'publish_actions'});
