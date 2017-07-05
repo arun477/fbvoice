@@ -326,6 +326,12 @@ display:-webkit-flex;
 	font-family: 'Tenali Ramakrishna', sans-serif;
 }
 
+#post {
+	text-align:center;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size:1.4em;
+}
+
 /* footer styles */
 
 #item5 {

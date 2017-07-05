@@ -168,7 +168,7 @@ $("#micke1").click(function(){
        console.log($.result);
        $.resultparts = $.result.split(" ");
        console.log($.resultparts);
-       if($.resultparts[0]==="post"){
+       if($.resultparts[0]==="post" || $.resultparts[0]==="posts" || $.resultparts[0]==="past" $.resultparts[0]==="first"){
         $.resultparts.shift();
         $.ree = $.resultparts.join(" ");
         FB.login(function(){
@@ -176,16 +176,16 @@ $("#micke1").click(function(){
 }, {scope: 'publish_actions'});
       
         
-        $("#item4-b").html("<p>" +"message : " +" " +$.ree +" " + "click the post button to post message"+"</p>" +"<br>"+"<h1 id='postbutton>post</h1>");
+        $("#item4-b").html("<h1 id='post'>" +"message : " +" " +$.ree +" " + "has been successfully posted"+"</h1>" );
          FB.getLoginStatus(updateStatusCallback2);
        } else if($.resultparts[0]==="feed" || $.resultparts[0]==="feet" || $.resultparts[0]==="field" || $.resultparts[0]==="set" || $.resultparts[0]==="speed" || $.resultparts[0]==="Shahid" || $.resultparts[0]==="feel" || $.resultparts[0]==="seed" || $.resultparts[0]==="read" || $.resultparts[0]==="food"){
               FB.api(
   '/me',
   'GET',
-  {"fields":"feed.limit(5)"},
+  {"fields":"posts.limit(3){from,message}"},
   function(response) {
      console.log(response);
-     $.fee = response.feed.data;
+     $.fee = response;
       // Insert your code here
   }
 );
