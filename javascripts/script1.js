@@ -81,6 +81,7 @@ $(document).ready(function(){
 
    updateStatusCallback = function(response) {
     if (response.status === 'connected') {
+      $("#frontcover").css("display","none");
      FB.login(function(response) {
       $.userDetails = response;
       if (response.authResponse) {
@@ -136,7 +137,7 @@ $(document).ready(function(){
 
 $("#loginbutton").click(function(){
  FB.getLoginStatus(updateStatusCallback);
-  $("#frontcover").css("display","none");
+  
 
 
 });
