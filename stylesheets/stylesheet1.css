@@ -344,6 +344,11 @@ body, html {
 	text-shadow:1px 1px 1px black;
 }
 
+#msg {
+	color:#5FD4AF;
+	text-shadow:1px 1px 1px black;
+}
+
 /* footer styles */
 
 #item5 {
@@ -1010,15 +1015,16 @@ body, html {
 	}
 
 	#post {
-	text-align:center;
+	text-align:left;
 	font-family: 'Tenali Ramakrishna', sans-serif;
-	font-size:1.2em;
+	font-size:1.13em;
+	margin:1%;
 }
 
 .feed {
 	text-align:left;
 	font-family: 'Tenali Ramakrishna', sans-serif;
-	font-size:1.2em;
+	font-size:1.13em;
 	margin:1%;
 }
 

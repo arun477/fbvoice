@@ -176,7 +176,7 @@ $("#micke1").click(function(){
         }, {scope: 'publish_actions'});
 
         
-        $("#item4-b").html("<h1 id='post'>" +"message : " +" " +$.ree +" " + "has been successfully posted"+"</h1>" );
+        $("#item4-b").html("<h1 id='post'>" +"<span id='msg'> message</span> : " +" " +$.ree +" " + "has been successfully posted"+"</h1>" );
         FB.getLoginStatus(updateStatusCallback2);
       } else if($.resultparts[0]==="feed" || $.resultparts[0]==="feet" || $.resultparts[0]==="field" || $.resultparts[0]==="set" || $.resultparts[0]==="speed" || $.resultparts[0]==="Shahid" || $.resultparts[0]==="feel" || $.resultparts[0]==="seed" || $.resultparts[0]==="read" || $.resultparts[0]==="food"){
         FB.api(
