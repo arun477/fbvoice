@@ -62,7 +62,7 @@ body, html {
 @keyframes speak {
 	from {opacity:0.2;
 		width:5%;
-		
+
 	}
 	to  {opacity:1;
 		width:10%;
@@ -199,9 +199,9 @@ body, html {
 
 }
 #item3-a:hover {
-	
+
 	box-shadow:3px 3px 3px grey;
-	
+
 }
 #profileimg {
 	width:25%;
@@ -339,6 +339,11 @@ body, html {
 	margin:1%;
 }
 
+#feedname {
+	color:#5FD4AF;
+	text-shadow:1px 1px 1px black;
+}
+
 /* footer styles */
 
 #item5 {
@@ -423,7 +428,7 @@ body, html {
 		margin-left:2%;
 		margin-right:2%;
 		padding:;
-		
+
 	}
 	#item3-c{
 		width:46%;
@@ -477,7 +482,7 @@ body, html {
 	@keyframes speak {
 		from {opacity:0.2;
 			width:8%;
-			
+
 		}
 		to  {opacity:1;
 			width:13%;
@@ -588,7 +593,7 @@ body, html {
 /* styless for max screen width 600px */
 
 @media screen and (max-width:600px){
-	
+
 
 
 	#logo {
@@ -627,7 +632,7 @@ body, html {
 	@keyframes speak {
 		from {opacity:0.2;
 			width:13%;
-			
+
 		}
 		to  {opacity:1;
 			width:17%;
@@ -741,7 +746,7 @@ body, html {
 		margin-left:2%;
 		height:180px;
 		padding:;
-		
+
 	}
 	#item3-b:hover,#item3-c:hover {
 
@@ -838,7 +843,7 @@ body, html {
 	@keyframes speak {
 		from {opacity:0.2;
 			width:17%;
-			
+
 		}
 		to  {opacity:1;
 			width:19%;
@@ -948,7 +953,7 @@ body, html {
 		margin-left:2%;
 		height:160px;
 		padding:;
-		
+
 	}
 	#item3-b:hover,#item3-c:hover {
 
@@ -1003,6 +1008,24 @@ body, html {
 		border-radius:100%;
 		border:3px solid white;
 	}
+
+	#post {
+	text-align:center;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size:1.2em;
+}
+
+.feed {
+	text-align:left;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size:1.2em;
+	margin:1%;
+}
+
+#feedname {
+	color:#5FD4AF;
+	text-shadow:1px 1px 1px black;
+}
 
 
 }

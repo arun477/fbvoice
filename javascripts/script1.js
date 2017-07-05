@@ -189,7 +189,7 @@ $("#micke1").click(function(){
 
            for (let i in $.fee){
             $("#vid").hide();
-            $("#item4-b").append("<h2 class='feed'>" + $.fee[i].from.name +" "+":"+ $.fee[i].message +"</h2>");
+            $("#item4-b").append("<h2 class='feed'>" +"<span id='feedname'>"+ $.fee[i].from.name+"</span>" +" "+":"+" "+ $.fee[i].message +"</h2>");
 
           }
 
