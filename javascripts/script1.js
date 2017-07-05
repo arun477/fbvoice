@@ -164,6 +164,7 @@ $("#micke1").click(function(){
     recognition.start();
 
     recognition.onresult = function(e) {
+      $("#micke1").removeClass("mickani");
       $.result = e.results[0][0].transcript
       console.log($.result);
       $.resultparts = $.result.split(" ");
@@ -200,6 +201,7 @@ $("#micke1").click(function(){
       }
       recognition.stop();
 
+
     };
 
     recognition.onerror = function(e) {
@@ -215,6 +217,13 @@ $("#item4-c").hide();
 $("#cmdlist").click(function(){
   $("#item4-c").slideToggle(1500);
 });
+
+$("#micke1").click(function(){
+ $(this).addClass("mickani");
+
+
+});
+
 
 
 updateStatusCallback2 = function(response) {

@@ -310,6 +310,25 @@ body, html {
 	box-shadow:2px 2px 2px grey;
 	cursor:pointer;
 }
+
+.mickani {
+	width:10%;
+	margin:2%;
+	border-radius:100%;
+	box-shadow:2px 2px 2px grey;
+	cursor:pointer;
+	animation-name:cool;
+	animation-duration:0.8s;
+	animation-direction:alternate-reverse;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+}
+
+@keyframes cool {
+	from {width:10%;box-shadow:2px 2px 2px grey;opacity:0.3;}
+	to {width:10%;box-shadow:4px 4px 4px black; opacity:1;}
+}
+
 #cmdlist {
 	text-decoration:none;
 	color:#5FD4AF;
@@ -1017,14 +1036,14 @@ body, html {
 	#post {
 	text-align:left;
 	font-family: 'Tenali Ramakrishna', sans-serif;
-	font-size:1.13em;
+	font-size:1.1em;
 	margin:1%;
 }
 
 .feed {
 	text-align:left;
 	font-family: 'Tenali Ramakrishna', sans-serif;
-	font-size:1.13em;
+	font-size:1.1em;
 	margin:1%;
 }
 
@@ -1032,6 +1051,17 @@ body, html {
 	color:#5FD4AF;
 	text-shadow:1px 1px 1px black;
 }
+
+.commands {
+	text-decoration:none;
+	font-size:1.1em;
+}
+
+#micke {
+	text-decoration:none;
+	font-size:1.1em;
+}
+
 
 
 }
