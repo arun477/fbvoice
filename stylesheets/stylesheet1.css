@@ -320,7 +320,7 @@ body, html {
 	animation-name:cool;
 	animation-duration:0.8s;
 	animation-direction:alternate-reverse;
-	animation-iteration-count:infinite;
+	animation-iteration-count:15;
 	animation-timing-function:linear;
 }
 
