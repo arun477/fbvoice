@@ -136,7 +136,7 @@ $(document).ready(function(){
 
 $("#loginbutton").click(function(){
  FB.getLoginStatus(updateStatusCallback);
-
+  $("#frontcover").css("display","none");
 
 
 });
@@ -165,6 +165,7 @@ $("#micke1").click(function(){
 
     recognition.onresult = function(e) {
       $("#micke1").removeClass("mickani");
+      $("#micke1").stop();
       $.result = e.results[0][0].transcript
       console.log($.result);
       $.resultparts = $.result.split(" ");
