@@ -332,6 +332,13 @@ display:-webkit-flex;
 	font-size:1.4em;
 }
 
+.feed {
+	text-align:left;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size:1.4em;
+	margin:1%;
+}
+
 /* footer styles */
 
 #item5 {

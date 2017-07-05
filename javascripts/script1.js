@@ -168,7 +168,7 @@ $("#micke1").click(function(){
        console.log($.result);
        $.resultparts = $.result.split(" ");
        console.log($.resultparts);
-       if($.resultparts[0]==="post" || $.resultparts[0]==="posts" || $.resultparts[0]==="past" $.resultparts[0]==="first"){
+       if($.resultparts[0]==="post" || $.resultparts[0]==="posts" || $.resultparts[0]==="past" || $.resultparts[0]==="first"){
         $.resultparts.shift();
         $.ree = $.resultparts.join(" ");
         FB.login(function(){
@@ -186,7 +186,13 @@ $("#micke1").click(function(){
   function(response) {
      console.log(response);
      $.fee = response.posts.data;
-      // Insert your code here
+
+     for (let i in $.fee){
+    
+      $("#item4-b").html("<h2 class='feed'>" + $.fee[i].from.name +" "+":"+ $.fee[i].message +"</h2>");
+
+     }
+     
   }
 );
        }
