@@ -83,6 +83,9 @@ $(document).ready(function(){
     if (response.status === 'connected') {
       $("#frontcover").css("display","none");
       $("#loginbutton").hide();
+      $(".frontlogin").hide();
+      $("#prof").hide();
+
      FB.login(function(response) {
       $.userDetails = response;
       if (response.authResponse) {
