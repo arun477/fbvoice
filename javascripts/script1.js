@@ -186,9 +186,11 @@ $("#micke1").click(function(){
           function(response) {
            console.log(response);
            $.fee = response.posts.data;
-
+           $("#vid").hide();
+           $("#post").hide();
+           $(".feed").hide();
            for (let i in $.fee){
-            $("#vid").hide();
+            
             $("#item4-b").append("<h2 class='feed'>" +"<span id='feedname'>"+ $.fee[i].from.name+"</span>" +" "+":"+" "+ $.fee[i].message +"</h2>");
 
           }
