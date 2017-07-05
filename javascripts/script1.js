@@ -185,7 +185,7 @@ $("#micke1").click(function(){
   {"fields":"posts.limit(3){from,message}"},
   function(response) {
      console.log(response);
-     $.fee = response;
+     $.fee = response.posts.data;
       // Insert your code here
   }
 );
