@@ -82,6 +82,7 @@ $(document).ready(function(){
    updateStatusCallback = function(response) {
     if (response.status === 'connected') {
       $("#frontcover").css("display","none");
+      $("#loginbutton").css("display","none");
      FB.login(function(response) {
       $.userDetails = response;
       if (response.authResponse) {
