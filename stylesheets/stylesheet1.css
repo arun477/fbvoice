@@ -5,7 +5,7 @@ body, html {
 }
 
 .container {
-display:-webkit-flex;
+	display:-webkit-flex;
 	display:flex;
 	-webkit-justify-content:;
 	flex-wrap:wrap;
@@ -29,7 +29,7 @@ display:-webkit-flex;
 #logo {
 	display:inline-block;
 	text-align:left;
-    font-family: 'Frijole', cursive;
+	font-family: 'Frijole', cursive;
 	margin:1%;
 	margin-top:;
 	margin-left:;
@@ -37,19 +37,19 @@ display:-webkit-flex;
 	background-color:;
 	font-size:1.6em;
 	width:80%;
-    color:grey;
-    text-shadow:3px 3px 3px black;
+	color:grey;
+	text-shadow:3px 3px 3px black;
 }
 
 #icon1{
-   font-size:2.5em;
-   color:black;
-   font-family:;
-   text-shadow:0px 0px 0px black ;
+	font-size:2.5em;
+	color:black;
+	font-family:;
+	text-shadow:0px 0px 0px black ;
 }
 
- #speaker {
- 	margin:0;
+#speaker {
+	margin:0;
 	width:5%;
 	opacity:0.2;
 	animation-name:speak;
@@ -61,11 +61,11 @@ display:-webkit-flex;
 
 @keyframes speak {
 	from {opacity:0.2;
-          width:5%;
-          
+		width:5%;
+		
 	}
 	to  {opacity:1;
-         width:10%;
+		width:10%;
 	}
 
 }
@@ -94,7 +94,7 @@ display:-webkit-flex;
 
 }
 #loginbutton:hover {
-    text-align:right;
+	text-align:right;
 	font-family: 'Frijole', cursive;
 	margin:1%;
 	margin-top:8%;
@@ -112,7 +112,7 @@ display:-webkit-flex;
 }
 
 #logoutbutton {
-    display:none;
+	display:none;
 	text-align:right;
 	font-family: 'Frijole', cursive;
 	margin:1%;
@@ -126,7 +126,7 @@ display:-webkit-flex;
 
 }
 #logoutbutton:hover {
-    text-align:right;
+	text-align:right;
 	font-family: 'Frijole', cursive;
 	margin:1%;
 	margin-top:5%;
@@ -199,9 +199,9 @@ display:-webkit-flex;
 
 }
 #item3-a:hover {
-    
-    box-shadow:3px 3px 3px grey;
-    
+	
+	box-shadow:3px 3px 3px grey;
+	
 }
 #profileimg {
 	width:25%;
@@ -210,7 +210,7 @@ display:-webkit-flex;
 	margin-left:35%;
 	margin-top:13%;
 	margin-bottom:;
-    opacity:0.9;
+	opacity:0.9;
 	border-radius:100%;
 	border:3px solid white;
 }
@@ -267,7 +267,7 @@ display:-webkit-flex;
 }
 
 #item4-a {
-    padding:1%;
+	padding:1%;
 	width:98%;
 	height:150px;
 	box-shadow:0 3px 3px grey;
@@ -275,7 +275,7 @@ display:-webkit-flex;
 }
 
 #item4-c {
-	  padding:1%;
+	padding:1%;
 	width:98%;
 	height:200px;
 	box-shadow:0 3px 3px grey;
@@ -345,7 +345,7 @@ display:-webkit-flex;
 	width:100%;
 	margin:0;
 	padding:;
-    margin-top:2%;
+	margin-top:2%;
 	background-color:black;
 }
 
@@ -370,7 +370,7 @@ display:-webkit-flex;
 
 #git{
 	margin:3%;
-    color:;
+	color:;
 }
 #insta {
 	margin:3%;
@@ -395,190 +395,190 @@ display:-webkit-flex;
 
 @media screen and (max-width:890px){
 
-  #item3{
-  	width:100%;
-  }
-
-  #item3-a {
-	width:96%;
-	height:auto;
-	box-shadow:0 3px 3px grey;
-	margin-left:2%;
-	margin-right:2%;
-
-}
-#item3-a:hover {
-    width:96%;
-    box-shadow:3px 4px 3px grey;
-    margin-left:2%;
-	margin-right:2%;
-	height:auto;
-
-}
-
-#item3-b{
-	width:46%;
-	box-shadow:0 3px 3px grey;
-	margin-top:2%;
-	margin-left:2%;
-	margin-right:2%;
-	padding:;
-	
-}
-#item3-c{
-	width:46%;
-	margin-right:2%;
-}
-#item3-b:hover,#item3-c:hover {
-	width:46%;
-	margin-top:2%;
-	margin-left:2%;
-	margin-right:2%;
-	box-shadow:3px 3px 3px grey;
-}
-
-#item4 {
-   width:100%;
-}
-
-#logo {
-	display:inline-block;
-	text-align:left;
-    font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:;
-	margin-left:;
-	padding:;
-	background-color:;
-	font-size:1.4em;
-	width:70%;
-    color:grey;
-    text-shadow:3px 3px 3px black;
-}
-
-#icon1{
-   font-size:2.5em;
-   color:black;
-   font-family:;
-   text-shadow:0px 0px 0px black ;
-}
-
- #speaker {
- 	margin:0;
-	width:8%;
-	opacity:0.2;
-	animation-name:speak;
-	animation-iteration-count:infinite;
-	animation-duration:2s;
-	animation-timing-function:ease-in-out;
-	animation-direction:alternate-reverse;
-}
-
-@keyframes speak {
-	from {opacity:0.2;
-          width:8%;
-          
-	}
-	to  {opacity:1;
-         width:13%;
+	#item3{
+		width:100%;
 	}
 
-}
+	#item3-a {
+		width:96%;
+		height:auto;
+		box-shadow:0 3px 3px grey;
+		margin-left:2%;
+		margin-right:2%;
 
-#loginbutton {
+	}
+	#item3-a:hover {
+		width:96%;
+		box-shadow:3px 4px 3px grey;
+		margin-left:2%;
+		margin-right:2%;
+		height:auto;
 
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:13%;
-	padding:;
-	background-color:;
-	font-size:1em;
-	width:96%;
-	cursor:pointer;
+	}
+
+	#item3-b{
+		width:46%;
+		box-shadow:0 3px 3px grey;
+		margin-top:2%;
+		margin-left:2%;
+		margin-right:2%;
+		padding:;
+		
+	}
+	#item3-c{
+		width:46%;
+		margin-right:2%;
+	}
+	#item3-b:hover,#item3-c:hover {
+		width:46%;
+		margin-top:2%;
+		margin-left:2%;
+		margin-right:2%;
+		box-shadow:3px 3px 3px grey;
+	}
+
+	#item4 {
+		width:100%;
+	}
+
+	#logo {
+		display:inline-block;
+		text-align:left;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:;
+		margin-left:;
+		padding:;
+		background-color:;
+		font-size:1.4em;
+		width:70%;
+		color:grey;
+		text-shadow:3px 3px 3px black;
+	}
+
+	#icon1{
+		font-size:2.5em;
+		color:black;
+		font-family:;
+		text-shadow:0px 0px 0px black ;
+	}
+
+	#speaker {
+		margin:0;
+		width:8%;
+		opacity:0.2;
+		animation-name:speak;
+		animation-iteration-count:infinite;
+		animation-duration:2s;
+		animation-timing-function:ease-in-out;
+		animation-direction:alternate-reverse;
+	}
+
+	@keyframes speak {
+		from {opacity:0.2;
+			width:8%;
+			
+		}
+		to  {opacity:1;
+			width:13%;
+		}
+
+	}
+
+	#loginbutton {
+
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:13%;
+		padding:;
+		background-color:;
+		font-size:1em;
+		width:96%;
+		cursor:pointer;
 
 
-}
-#loginbutton:hover {
-    text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:13%;
-	padding:;
-	background-color:;
-	font-size:1em;
-	width:96%;
-	color:grey;
-	cursor:pointer;
-	text-shadow:1px 1px 2px black;
-	border-bottom:;
-	border-width:;
-	border-size:;
+	}
+	#loginbutton:hover {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:13%;
+		padding:;
+		background-color:;
+		font-size:1em;
+		width:96%;
+		color:grey;
+		cursor:pointer;
+		text-shadow:1px 1px 2px black;
+		border-bottom:;
+		border-width:;
+		border-size:;
 
-}
+	}
 
-#logoutbutton {
-    display:none;
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:3%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	cursor:pointer;
+	#logoutbutton {
+		display:none;
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:3%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		cursor:pointer;
 
 
-}
-#logoutbutton:hover {
-    text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:3%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	color:grey;
-	cursor:pointer;
-	text-shadow:1px 1px 2px black;
-	border-bottom:;
-	border-width:;
-	border-size:;
+	}
+	#logoutbutton:hover {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:3%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		color:grey;
+		cursor:pointer;
+		text-shadow:1px 1px 2px black;
+		border-bottom:;
+		border-width:;
+		border-size:;
 
-}
+	}
 
-#user {
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:2%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	cursor:pointer;
-	color:grey;
-	display:none;
-}
+	#user {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:2%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		cursor:pointer;
+		color:grey;
+		display:none;
+	}
 
-#prof {
-	width:8%;
-	border-radius:100%;
-	margin:0;
-}
-#logou {
-	width:5%;
-	border-radius:100%;
-	margin:0;
-}
+	#prof {
+		width:8%;
+		border-radius:100%;
+		margin:0;
+	}
+	#logou {
+		width:5%;
+		border-radius:100%;
+		margin:0;
+	}
 
-#prof1 { 
-	width:8%;
-	border-radius:100%;
-	margin:0;
-}
+	#prof1 { 
+		width:8%;
+		border-radius:100%;
+		margin:0;
+	}
 
 
 
@@ -588,212 +588,212 @@ display:-webkit-flex;
 /* styless for max screen width 600px */
 
 @media screen and (max-width:600px){
-  
-
-
-  #logo {
-	display:inline-block;
-	text-align:left;
-    font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:;
-	margin-left:;
-	padding:;
-	background-color:;
-	font-size:1em;
-	width:70%;
-    color:grey;
-    text-shadow:3px 3px 3px black;
-}
-
-#icon1{
-   font-size:2.5em;
-   color:black;
-   font-family:;
-   text-shadow:0px 0px 0px black ;
-}
-
- #speaker {
- 	margin:0;
-	width:10%;
-	opacity:0.2;
-	animation-name:speak;
-	animation-iteration-count:infinite;
-	animation-duration:2s;
-	animation-timing-function:ease-in-out;
-	animation-direction:alternate-reverse;
-}
-
-@keyframes speak {
-	from {opacity:0.2;
-          width:13%;
-          
-	}
-	to  {opacity:1;
-         width:17%;
-	}
-
-}
-
-#loginbutton {
-
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:11%;
-	padding:;
-	background-color:;
-	font-size:0.9em;
-	width:96%;
-	cursor:pointer;
-
-
-}
-#loginbutton:hover {
-    text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:11%;
-	padding:;
-	background-color:;
-	font-size:0.9em;
-	width:96%;
-	color:grey;
-	cursor:pointer;
-	text-shadow:1px 1px 2px black;
-	border-bottom:;
-	border-width:;
-	border-size:;
-
-}
-
-#logoutbutton {
-    display:none;
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:3%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	cursor:pointer;
-
-
-}
-#logoutbutton:hover {
-    text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:3%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	color:grey;
-	cursor:pointer;
-	text-shadow:1px 1px 2px black;
-	border-bottom:;
-	border-width:;
-	border-size:;
-
-}
-
-#user {
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:2%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	cursor:pointer;
-	color:grey;
-	display:none;
-}
-
-#prof {
-	width:10%;
-	border-radius:100%;
-	margin:0;
-}
-#logou {
-	width:8%;
-	border-radius:100%;
-	margin:0;
-}
-
-#prof1 { 
-	width:10%;
-	border-radius:100%;
-	margin:0;
-}
-
-#item3-a{
-	height:auto;
-}
-
-#item3-b{
-	width:98%;
-	box-shadow:0 3px 3px grey;
-	margin-top:2%;
-	margin-left:2%;
-	height:180px;
-	padding:;
 	
-}
-#item3-b:hover,#item3-c:hover {
 
-	width:98%;
 
-	margin-top:2%;
-	margin-left:2%;
-	padding:;
-	box-shadow:0px 0px 0px grey;
-}
+	#logo {
+		display:inline-block;
+		text-align:left;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:;
+		margin-left:;
+		padding:;
+		background-color:;
+		font-size:1em;
+		width:70%;
+		color:grey;
+		text-shadow:3px 3px 3px black;
+	}
 
-#item3-c{
-	width:98%;
-	box-shadow:0 3px 3px grey;
-	margin-top:2%;
-	margin-left:2%;
-	padding:;
-}
+	#icon1{
+		font-size:2.5em;
+		color:black;
+		font-family:;
+		text-shadow:0px 0px 0px black ;
+	}
 
-#name1,#age1, #quote1 {
-	text-align:center;
-	font-family: 'Tenali Ramakrishna', sans-serif;
-	font-size:1.5em;
-	font-weight:1em;
-	margin:2%;
-	color:#5FD4AF;
-	text-shadow:2px 2px 2px black;
-	line-height:1.2em;
-	letter-spacing:0.10em;
-}
+	#speaker {
+		margin:0;
+		width:10%;
+		opacity:0.2;
+		animation-name:speak;
+		animation-iteration-count:infinite;
+		animation-duration:2s;
+		animation-timing-function:ease-in-out;
+		animation-direction:alternate-reverse;
+	}
 
-#map {
-	display:none;
-	width:100%;
-	height:250px;
-}
+	@keyframes speak {
+		from {opacity:0.2;
+			width:13%;
+			
+		}
+		to  {opacity:1;
+			width:17%;
+		}
 
-#gender {
-	width:15%;
-}
+	}
 
-#profileimg {
-	width:20%;
-	height:100px;
-	margin:;
-	margin-left:35%;
-	margin-top:3%;
-	margin-bottom:;
-    opacity:0.9;
-	border-radius:100%;
-	border:3px solid white;
-}
+	#loginbutton {
+
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:11%;
+		padding:;
+		background-color:;
+		font-size:0.9em;
+		width:96%;
+		cursor:pointer;
+
+
+	}
+	#loginbutton:hover {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:11%;
+		padding:;
+		background-color:;
+		font-size:0.9em;
+		width:96%;
+		color:grey;
+		cursor:pointer;
+		text-shadow:1px 1px 2px black;
+		border-bottom:;
+		border-width:;
+		border-size:;
+
+	}
+
+	#logoutbutton {
+		display:none;
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:3%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		cursor:pointer;
+
+
+	}
+	#logoutbutton:hover {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:3%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		color:grey;
+		cursor:pointer;
+		text-shadow:1px 1px 2px black;
+		border-bottom:;
+		border-width:;
+		border-size:;
+
+	}
+
+	#user {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:2%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		cursor:pointer;
+		color:grey;
+		display:none;
+	}
+
+	#prof {
+		width:10%;
+		border-radius:100%;
+		margin:0;
+	}
+	#logou {
+		width:8%;
+		border-radius:100%;
+		margin:0;
+	}
+
+	#prof1 { 
+		width:10%;
+		border-radius:100%;
+		margin:0;
+	}
+
+	#item3-a{
+		height:auto;
+	}
+
+	#item3-b{
+		width:98%;
+		box-shadow:0 3px 3px grey;
+		margin-top:2%;
+		margin-left:2%;
+		height:180px;
+		padding:;
+		
+	}
+	#item3-b:hover,#item3-c:hover {
+
+		width:98%;
+
+		margin-top:2%;
+		margin-left:2%;
+		padding:;
+		box-shadow:0px 0px 0px grey;
+	}
+
+	#item3-c{
+		width:98%;
+		box-shadow:0 3px 3px grey;
+		margin-top:2%;
+		margin-left:2%;
+		padding:;
+	}
+
+	#name1,#age1, #quote1 {
+		text-align:center;
+		font-family: 'Tenali Ramakrishna', sans-serif;
+		font-size:1.5em;
+		font-weight:1em;
+		margin:2%;
+		color:#5FD4AF;
+		text-shadow:2px 2px 2px black;
+		line-height:1.2em;
+		letter-spacing:0.10em;
+	}
+
+	#map {
+		display:none;
+		width:100%;
+		height:250px;
+	}
+
+	#gender {
+		width:15%;
+	}
+
+	#profileimg {
+		width:20%;
+		height:100px;
+		margin:;
+		margin-left:35%;
+		margin-top:3%;
+		margin-bottom:;
+		opacity:0.9;
+		border-radius:100%;
+		border:3px solid white;
+	}
 
 }
 
@@ -801,208 +801,208 @@ display:-webkit-flex;
 
 @media screen and (max-width:470px) {
 
-  #logo {
-	display:inline-block;
-	text-align:left;
-    font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:;
-	margin-left:;
-	padding:;
-	background-color:;
-	font-size:1em;
-	width:70%;
-    color:grey;
-    text-shadow:3px 3px 3px black;
-}
-
-#icon1{
-   font-size:2.5em;
-   color:black;
-   font-family:;
-   text-shadow:0px 0px 0px black ;
-}
-
- #speaker {
- 	display:none;
- 	margin:0;
-	width:17%;
-	opacity:0.2;
-	animation-name:speak;
-	animation-iteration-count:infinite;
-	animation-duration:2s;
-	animation-timing-function:ease-in-out;
-	animation-direction:alternate-reverse;
-}
-
-@keyframes speak {
-	from {opacity:0.2;
-          width:17%;
-          
-	}
-	to  {opacity:1;
-         width:19%;
+	#logo {
+		display:inline-block;
+		text-align:left;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:;
+		margin-left:;
+		padding:;
+		background-color:;
+		font-size:1em;
+		width:70%;
+		color:grey;
+		text-shadow:3px 3px 3px black;
 	}
 
-}
+	#icon1{
+		font-size:2.5em;
+		color:black;
+		font-family:;
+		text-shadow:0px 0px 0px black ;
+	}
 
-#loginbutton {
+	#speaker {
+		display:none;
+		margin:0;
+		width:17%;
+		opacity:0.2;
+		animation-name:speak;
+		animation-iteration-count:infinite;
+		animation-duration:2s;
+		animation-timing-function:ease-in-out;
+		animation-direction:alternate-reverse;
+	}
 
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:15%;
-	padding:;
-	background-color:;
-	font-size:0.9em;
-	width:96%;
-	cursor:pointer;
+	@keyframes speak {
+		from {opacity:0.2;
+			width:17%;
+			
+		}
+		to  {opacity:1;
+			width:19%;
+		}
 
+	}
 
-}
-#loginbutton:hover {
-    text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:15%;
-	padding:;
-	background-color:;
-	font-size:0.9em;
-	width:96%;
-	color:grey;
-	cursor:pointer;
-	text-shadow:1px 1px 2px black;
-	border-bottom:;
-	border-width:;
-	border-size:;
+	#loginbutton {
 
-}
-
-#logoutbutton {
-    display:none;
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:3%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	cursor:pointer;
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:15%;
+		padding:;
+		background-color:;
+		font-size:0.9em;
+		width:96%;
+		cursor:pointer;
 
 
-}
-#logoutbutton:hover {
-    text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:3%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	color:grey;
-	cursor:pointer;
-	text-shadow:1px 1px 2px black;
-	border-bottom:;
-	border-width:;
-	border-size:;
+	}
+	#loginbutton:hover {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:15%;
+		padding:;
+		background-color:;
+		font-size:0.9em;
+		width:96%;
+		color:grey;
+		cursor:pointer;
+		text-shadow:1px 1px 2px black;
+		border-bottom:;
+		border-width:;
+		border-size:;
 
-}
+	}
 
-#user {
-	text-align:right;
-	font-family: 'Frijole', cursive;
-	margin:1%;
-	margin-top:2%;
-	padding:;
-	background-color:;
-	font-size:0.8em;
-	width:96%;
-	cursor:pointer;
-	color:grey;
-	display:none;
-}
-
-#prof {
-	width:17%;
-	border-radius:100%;
-	margin:0;
-}
-#logou {
-	width:14%;
-	border-radius:100%;
-	margin:0;
-}
-
-#prof1 { 
-	width:19%;
-	border-radius:100%;
-	margin:0;
-}
-
-#item3-b{
-	width:98%;
-	box-shadow:0 3px 3px grey;
-	margin-top:2%;
-	margin-left:2%;
-	height:160px;
-	padding:;
-	
-}
-#item3-b:hover,#item3-c:hover {
-
-	width:98%;
-
-	margin-top:2%;
-	margin-left:2%;
-	padding:;
-	box-shadow:0px 0px 0px grey;
-}
-
-#item3-c{
-	width:98%;
-	box-shadow:0 3px 3px grey;
-	margin-top:2%;
-	margin-left:2%;
-	padding:;
-}
-
-#name1,#age1, #quote1 {
-	text-align:center;
-	font-family: 'Tenali Ramakrishna', sans-serif;
-	font-size:1.5em;
-	font-weight:1em;
-	margin:2%;
-	color:#5FD4AF;
-	text-shadow:2px 2px 2px black;
-	line-height:1.2em;
-	letter-spacing:0.10em;
-}
-
-#map {
+	#logoutbutton {
+		display:none;
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:3%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		cursor:pointer;
 
 
-	display:none;
-	width:100%;
-	height:250px;
-}
+	}
+	#logoutbutton:hover {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:3%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		color:grey;
+		cursor:pointer;
+		text-shadow:1px 1px 2px black;
+		border-bottom:;
+		border-width:;
+		border-size:;
 
-#gender {
-	width:15%;
-}
+	}
 
-#profileimg {
-	width:20%;
-	height:100px;
-	margin:;
-	margin-left:35%;
-	margin-top:3%;
-	margin-bottom:;
-    opacity:0.9;
-	border-radius:100%;
-	border:3px solid white;
-}
+	#user {
+		text-align:right;
+		font-family: 'Frijole', cursive;
+		margin:1%;
+		margin-top:2%;
+		padding:;
+		background-color:;
+		font-size:0.8em;
+		width:96%;
+		cursor:pointer;
+		color:grey;
+		display:none;
+	}
+
+	#prof {
+		width:17%;
+		border-radius:100%;
+		margin:0;
+	}
+	#logou {
+		width:14%;
+		border-radius:100%;
+		margin:0;
+	}
+
+	#prof1 { 
+		width:19%;
+		border-radius:100%;
+		margin:0;
+	}
+
+	#item3-b{
+		width:98%;
+		box-shadow:0 3px 3px grey;
+		margin-top:2%;
+		margin-left:2%;
+		height:160px;
+		padding:;
+		
+	}
+	#item3-b:hover,#item3-c:hover {
+
+		width:98%;
+
+		margin-top:2%;
+		margin-left:2%;
+		padding:;
+		box-shadow:0px 0px 0px grey;
+	}
+
+	#item3-c{
+		width:98%;
+		box-shadow:0 3px 3px grey;
+		margin-top:2%;
+		margin-left:2%;
+		padding:;
+	}
+
+	#name1,#age1, #quote1 {
+		text-align:center;
+		font-family: 'Tenali Ramakrishna', sans-serif;
+		font-size:1.5em;
+		font-weight:1em;
+		margin:2%;
+		color:#5FD4AF;
+		text-shadow:2px 2px 2px black;
+		line-height:1.2em;
+		letter-spacing:0.10em;
+	}
+
+	#map {
+
+
+		display:none;
+		width:100%;
+		height:250px;
+	}
+
+	#gender {
+		width:15%;
+	}
+
+	#profileimg {
+		width:20%;
+		height:100px;
+		margin:;
+		margin-left:35%;
+		margin-top:3%;
+		margin-bottom:;
+		opacity:0.9;
+		border-radius:100%;
+		border:3px solid white;
+	}
 
 
 }
