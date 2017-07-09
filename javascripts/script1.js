@@ -103,11 +103,11 @@ $(document).ready(function(){
       $.cov  = response.cover.source;
       $.age1 = response.age_range.min;
       $.gen = response.gender;
-      $.birth = response.birthday;
+    /*  $.birth = response.birthday;
       $.birth = $.birth.split("/");
       $.birth = $.birth[2];
       $.birth = parseInt($.birth);
-      $.ageday = 2017 - $.birth;
+      $.ageday = 2017 - $.birth; */
       $("#loginbutton").hide();
       $("#user").show();
       $("#logoutbutton").show();
@@ -117,7 +117,7 @@ $(document).ready(function(){
       $("#prof1").attr("src",$.url);
       $("#profession").text($.ff);
       $("#item3-a").css("background-image",'url('+$.cov+')');
-      $("#age").text($.ageday);
+      $("#age").text($.age1 +" "+'\+');
       if($.gen ==="male"){
        $("#gender").attr("src","images/maleicon.png");
      } else{
