@@ -54,10 +54,11 @@ body, html {
 .frontlogin {
 	text-align:center !important;
 	color:white !important;
-	width:100% !important ;
+	width:50% !important ;
+	height:50px;
 	margin-top:1% !important;
 	
-	margin:5%;
+	margin:25% !important;
 	
 }
 
